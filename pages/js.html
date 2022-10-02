@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css">
+    <title>js</title>
+  </head>
+  <body>
+    <nav class="navbar fixed mb-5 navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand"><h2 class="mb-0">JAVASCRİPT NEDİR ?</h2></a>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-dark" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="row p-5 ">
+      <div class="card-div">
+        <h2 class="card-tittle">Konu Başlıkları</h2>
+        <div class="card" >
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#changes">DEĞİŞKENLER</a></li>
+            <li class="list-group-item"><a href="#data-types">VERİ TİPLERİ</a></li>
+            <li class="list-group-item"><a href="#">Hazırlanacak...</a></li>
+            <li class="list-group-item"><a href="#">Hazırlanacak...</a></li>
+            <li class="list-group-item"><a href="#">Hazırlanacak...</a></li>
+            <li class="list-group-item"><a href="#">Hazırlanacak...</a></li>
+            <li class="list-group-item"><a href="#">Hazırlanacak...</a></li>
+            <li class="list-group-item"><a href="#">Hazırlanacak...</a></li>
+            <li class="list-group-item"><a href="#">Hazırlanacak...</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-3"></div>
+      <div class="col-8 ms-3" style="margin-top:80px ;">
+        <div id="changes">
+          <div class="content">
+            <h3 >DEĞİŞKENLER</h3>
+            <p>Geçici olarak veri saklamak için oluşturduğumuz veri yapılarına değişken denir.
+             <br><br>
+              Örneğin bir öğrencinin not ortalamasını hesaplamak istediğimizde hesaplama işlemine gelmeden önce öğrencinin notlarını geçici olarak bir yerde saklamamız gerekir.
+             <br>
+              var not1 = 50; <br>
+              var not2 = 60; <br>
+              var ortalama = (not1+not2)/2;
+              <p> Burada bir değişken kullanıyoruz çünkü not bilgilerini her kullanıcı için tekrar tekrar alabiliriz ve değişken içerisinde hangi değer varsa ona göre bir hesaplama sonucu gelecektir.</p>
+              <b>JAVASCRİPT DEĞİŞKEN TANIMLAMA</b> 
+              <p>- Javascript de değişken tanımlamak için var ya da let komutu kullanılır. </p>
+              <p>- Değişkenleri var komutuyla tanımladıktan sonra içlerine değer ataması yapıyoruz ve en sona ; (noktalı virgül) eklememiz gerekiyor.</p>
+              <p>- Değişkenlere karakter ataması (string) yaparken tek tırnak ya da çift tırnak kullanmamız gerekir.</p>
+              <p>- Değişkenlere sayısal bir atama yaparken tırnak kullanmamamız gerekiyor. Aksi halde string bir değişken tanımlaması yapmış oluruz.</p>
+              <b>JAVASCRİPT DEĞİŞKEN TANIMLAMA KURALLARI</b>
+              <p>- Değişken isimleri rakam ile başlayamaz.</p>
+              <p>- Komut isimleriyle tanımlama yapılamaz.</p>
+              <p>- Değişken isimlerinde türkçe karakter kullanmamalıyız. "ı" karakteri yerine "i" karakteri kullanmalıyız.</p>
+            </p> <br>
+          </div>
+        </div>
+        <div id="data-types">
+          <div class="content">
+            <h3>VERİ TİPLERİ</h3>
+            <p>Javascript' de veri tutmak için kullandığımız javascript veri tiplerini 2 ayrı grupta ele alabiliriz.
+              <p><b> Basit Veri Tipleri:</b><ins> String, Number, Boolean</ins> ve <ins> undefined.</ins></p>
+              <p><b>Referans Tipler:</b> <ins> Dizi, Nesne, Fonksiyon</ins> ve <ins>null</ins> veri tipleridir. </p>
+              <b>JAVASCRİPT STRİNG</b>
+              <p>Javascript' de karakter dizilerini string veri tipiyle saklarız. </p>
+              <p>String bir değişken tanımlarken tek tırnak ya da çift tırnak kullanabiliriz.</p>
+              <b>JAVASCRİPT NUMBER</b>
+              <p>Javascript' de sayısal verileri number veri tiplerinde tutarız.</p>
+              <p>number türündeki değerler <strong><ins> tırnak kullanılmadan</ins></strong> oluşturulması gerekiyor.</p>
+              <p>Ondalıklı bir sayıyı nokta ile tanımlarız ve veri tipine baktığımızda gene number türünde bir veri olduğunu görürüz.</p>
+              <b>JAVASCRİPT BOOLEAN</b>
+              <p>Javascript' de true yada false verileri boolean veri tipinde tutarız. </p>
+              <p>boolean türündeki bir veri tipi true ya da false bir değer alır.</p>
+              <b>JAVASCRİPT UNDEFİNED</b>
+              <p>Tanımlanan ancak içerisine değer atılmayan tipler için undefined tipi kullanılır.</p>
+              <b>JAVASCRİPT DİZİLER</b>
+              <p>String veri türünde karakter grubu saklayabildiğimiz gibi diziler içerisinde de string bir veri ya da number türünde bir veri grubunu saklayabiliriz. Örneğin isim     listesi, şehir listesi vb.</p>
+              <p>Dizinin eleman sayısını öğrenmek için length özelliğini kullanmamız gerekiyor.</p>
+              <b>JAVASCRİPT NESNE</b>
+              <p>Javascript' de bir nesne tanımlayarak bir gruba ait bilgileri ayrı ayrı değişken tanımlamamıza gerek kalmadan saklayabiliriz Örneğin bir kullanıcının bilgileri ya da bir araç bilgisi.</p>
+              <p>Nesne tanımlamasını tek veya birden çok satırda da yapabiliriz.</p>
+              <p>Nesne üzerinden bilgilere ulaşmak için nesneden sonra '.' operatörünü kullanabiliriz.</p>
+              <p>Alternatif olarak nesne özelliklerine ulaşmak için [ ] operatörünü de kullanabiliriz.</p>
+              <b>JAVASCRİPT FONKSİYON</b>
+              <p>JavaScript ile yazılmış bir fonksiyon, belirli bir işlemi yapmak için tasarlanmış kod bloğudur. Çalıştırıldığında (çağrıldığında) işlem yapar.</p>
+              <p><b><ins>Fonksiyon Oluşturma:</ins></b></p>
+              <p>- Fonksiyon function anahtar kelimesi bir boşluk fonksyion adı ve parantez ile tanımlanır.</p>
+              <p>- Fonksiyon isimlerinde harf, rakam, alt çizgi ve dolar işareti olabilir. (değişken tanımlama kuralları ile aynı)</p>
+              <p>- Birden fazla parametre parantez içerisinde virgülle ayrılır. <b>(parametre1, parametre2, parametre3, … )</b></p>
+              <p>- Fonksiyon kodları süslü parantez <b>{ . . . } </b> içerisine yazılır.</p>
+              <b>JAVASCRİPT NULL</b>
+              <p>Javascript' de null bir nesne olarak algılanır. Yani tanımladığınız bir veri içine null değer attığınızda bellekte bir alan tahsis edilir ancak içerisinde bir değer  olmadığını söylemiş oluruz. Null değer atayarak adresi belli olan nesnenin içerisindeki değeri silmiş oluyoruz. Tanımlanan nesnenin bellek üzerindeki adresi silmiş olmayız.
+              </p>
+            </p> <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css">
+  <title>html</title>
+</head>
+
+<body>
+  <nav class="navbar fixed mb-5 navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <h2 class="mb-0">HTML NEDİR ?</h2>
+      </a>
+      <form class="d-flex">
+        <input id="search" class="form-control me-2" type="search" placeholder="Arama yap..." aria-label="Search" />
+        <button class="btn btn-dark" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <div class="row p-5">
+    <div class="card-div">
+      <h2 class="card-tittle">Konu Başlıkları</h2>
+      <div class="card">
+        <ul class="list-group list-group-flush">
+          <li onclick="deneme('title-tags')" class="list-group-item"><a href="#title-tags">BAŞLIK ETİKETLERİ</a></li>
+          <li class="list-group-item"><a href="#paragraph-label">PARAGRAF ETİKETİ</a></li>
+          <li class="list-group-item"><a href="#format-labels">BİÇİMLENDİRME ETİKETLERİ</a></li>
+          <li class="list-group-item"><a href="#add-photos">FOTOĞRAF EKLEME</a></li>
+          <li class="list-group-item"><a href="#">Hazırlanacak...</a></li>
+          <li class="list-group-item"><a href="#">Hazırlanacak...</a></li>
+          <li class="list-group-item"><a href="#">Hazırlanacak...</a></li>
+          <li class="list-group-item"><a href="#">Hazırlanacak...</a></li>
+          <li class="list-group-item"><a href="#">Hazırlanacak...</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-3"></div>
+    <div class="col-8 ms-3 " style="margin-top:80px ;">
+      <div id="title-tags">
+        <div class="content">
+          <h3 >BAŞLIK ETİKETLERİ</h3>
+          <p>
+           Html sayfalarında içerik oluştururken kullandığımız başlıkları önem
+           derecesine göre başlık etiketleri (heading tags) içine almamız
+           gerekir. Çünkü arama motorları sayfa üzerindeki başlıkların önem
+           derecesini bilmek isterler. <br /><br />
+           Örneğin; sayfanın en önemli başlığı &lth1&gt etiketi içine alınmalıdır ki
+           arama sonuçlarında &lth1&gt içine gelen başlık vurgulansın ve kullanıcılara
+           gösterilsin.
+           <br /><br />
+           Html başlık etiketleri &lth1&gt, &lth2&gt, &lth3&gt, &lth4&gt, &lth5&gt, &lth6&gt olmak üzere 6 tanedir ve
+           bu etiketleri her hangi bir stil (yazı
+           boyutu yazı kalınlığı gibi) uygulanmadan tarayıcıların varsayılan
+           olarak atadıkları font büyüklükleri ile sayfada gösterilirler.
+           <br /><br />
+           Html başlık etiketlerinin kullanımında önemli olan bu etiketlere
+           yüklenen anlamlardır. &lth1&gt etiketi sayfanın en önemli vurgulanan
+           başlığıdır ki sayfada 1 kere kullanılması önerilir.
+          </p>
+          <br />
+        </div>
+      </div>
+      <div id="paragraph-label">
+        <div class="content">
+          <h3 >PARAGRAF ETİKETİ</h3>
+          <p>
+           Html sayfalarında paragraf oluşturmak için kullandığımız etiket &ltp&gt etiketidir.
+           <br>
+           Kullanımı ;
+           <P> &ltp&gt Paragraf Etiketi &lt/p&gt şeklindedir.</P>
+           <P> &ltp&gt etiketi bir block html etiketidir ve block etiketlerinin özelliği satırı olduğu gibi kaplamasıdır.
+           Yani paragrafdan sonra gelen her eleman bir alt satırdan başlar.</P>
+          </p>
+          <br />
+        </div>
+      </div>
+      <div id="format-labels">
+       <div class="content">
+        <h3>BİÇİMLENDİRME ETİKETLERİ</h3>
+        <p>
+         Html'in websitemiz üzerindeki içeriklerimizi biçimlendirmek yani onlara yeni stiller katmak için belli başlı
+         etiketleri vardır. Bunların listesi;
+
+         <p> <b>&ltb&gt</b> - <b> Kalın yazı</b></p>
+         <p> <b>&ltstrong&gt</b> - <strong> Önemli yazı</strong></p>
+         <p> <b>&lti&gt</b> - <i> Eğik yazı</i></p>
+         <p> <b>&ltem&gt</b> - <em> Vurgulanmış yazı</em></p>
+         <p> <b>&ltmark&gt</b> - <mark>İşaretli yazı </mark></p>
+         <p> <b>&ltsmall&gt</b> - <small> Küçük yazı </small> (Büyük harfle bile yazılsa normal yazıdan daha küçük görünür)</p>
+         <p> <b>&ltdel&gt</b> - <del> Silinmiş yazı </del></p>
+         <p> <b>&ltins&gt</b> - <ins> Eklenmiş yazı </ins></p>
+         <p> <b>&ltsub&gt</b> -  Alt <sub> simge</sub> yazı</p>
+         <p> <b>&ltsup&gt</b> - Üst <sup> simge </sup> yazı</p>
+        </p>
+        <br />
+       </div>
+      </div>
+      <div  id="add-photos">
+        <div class="content">
+          <h3 >FOTOĞRAF EKLEME</h3>
+          <p>
+           Sayfaya resim eklemek için &lta&gt etiketi kullanılır.
+           <br><br>
+           <b> Kullanımı ;</b>
+           <br>
+           &ltimg src="resim yolu" alt="resme alternatif yazı"&gt
+           <br>
+           ** src ile resmin yolunu belirtmemiz gerekiyor. Resim html sayfamızla aynı klasör içinde de olabilir ya da
+           internet üzerinden de olabilir.
+           <br><br>
+           <b>Örneğin</b>, resmi internet üzerinden almak istersek ;
+           <br>
+           &ltimg src="https://www.pexels.com/photo/action-automobiles-automotive-car-show-173287" alt="resme alternatif
+            yazı"&gt
+           <p>**Eğer resim yolu yanlış ise resim sayfada gösterilemez ve resmin yerine alternatif olarak gösterilir. </p>
+           <b>Resmi link haline çevirmek : </b>
+           <br>
+           &lta href="sadikturan.com"&gt <br> &ltimg
+           src="https://www.pexels.com/photo/action-automobiles-automotive-car-show-173287" alt=""
+           style="width:400px;height:400px;"&gt
+           <br> &lt/a&gt
+          </p>
+       </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+ 
+  // function deneme(id) {
+  //   if (true) {
+      
+  //     document.getElementById("title-tags").classList.add("spacer")
+    
+  //   }
+  // }
+
+  // function deneme2(id) {
+  //   if (true) {
+      
+  //     document.getElementById("paragraph-label").classList.add("spacer")
+     
+  //   }
+  // }
+ 
+
+</script>
+<link rel="stylesheet" href="./style.css">
+
+</html>

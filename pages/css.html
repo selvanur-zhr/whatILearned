@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css">
+    <title>css</title>
+  </head>
+  <body>
+    <nav class="navbar fixed mb-5 navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand"><h2 class="mb-0">CSS NEDİR ?</h2></a>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-dark" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="row p-5 ">
+      <div class="card-div">
+        <h2 class="card-tittle">Konu Başlıkları</h2>
+        <div class="card" >
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#css-syntax">CSS SÖZ DİZİMİ</a></li>
+            <li class="list-group-item"><a href="#css-fonts">CSS YAZIM TÜRLERİ</a></li>
+            <li class="list-group-item"><a href="#id-class">ID VE CLASSES</a></li>
+            <li class="list-group-item"><a href="#">Hazırlanacak...</a></li>
+            <li class="list-group-item"><a href="#">Hazırlanacak...</a></li>
+            <li class="list-group-item"><a href="#">Hazırlanacak...</a></li>
+            <li class="list-group-item"><a href="#">Hazırlanacak...</a></li>
+            <li class="list-group-item"><a href="#">Hazırlanacak...</a></li>
+            <li class="list-group-item"><a href="#">Hazırlanacak...</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-3"></div>
+      <div class="col-8 ms-3 " style="margin-top:80px ;">
+        <div id="css-syntax">
+          <div class="content">
+            <h3 >CSS SÖZ DİZİMİ</h3>
+            <p>
+              Css kodlarımızın söz dizimi selector ve declaration kısımlarından oluşur.
+              <p><b>Selector:</b> Css kodumuzun etkileyeceği etiketlerin seçimini selector ile yapıyoruz.</p>
+              <b>Declaration:</b> Css tanımlama kısmıdır.
+              <br>
+              <b>=> Property: </b>Özellik ismi. (örneğin ; color , background-color gibi.)
+              <br>
+              <b>=> Value: </b>Özelliğe verebileceğimiz değerdir. (örneğin ; blue , red gibi.)
+            </p> <br>
+          </div>
+        </div>
+        <div id="css-fonts"> 
+          <div class="content">
+           <h3>CSS YAZIM TÜRLERİ</h3>
+           <p>
+            Css kodlarımızı 3 farklı şekilde tanımlayabiliriz. Bunlar;
+            <br>
+            <b>- Inline</b>
+            <br>
+            <b>- Internal</b>
+            <br>
+            <b>- External</b>
+            <div>
+             <p>
+              <b>INLINE CSS</b> <br>
+              Sadece tanımlandığı etiket için geçerli olmasını istediğimiz css kodlarımızı inline olarak tanımlarız. <br>
+              Örneğin ; &ltspan <b>style="color:red;"</b>&gt  text &lt/span&gt 
+              <p>**Inline olarak tanımladığımız css kodları sadece css kodunun tanımlandığı <span> etiketi için uygulanır ve yazı rengi kırmızı olur.</p>
+             </p>
+             <p>
+              <b>INTERNAL CSS</b> <br>
+              Internal css <b> &lthead&gt  &lt/head&gt </b> etiketleri arasına <b> &ltstyle  type="text/css"&gt &lt/style&gt </b> etiketleri eklenerek kullanılır.
+              <p>**Internal olarak tanımlanan css kodları ise sadece içinde bulunduğu ....html sayfası içinde uygulanır. </p>
+             </p>
+             <p>
+              <b>EXTERNAL CSS</b> <br>
+              Eğer tanımladığımız css kodları birden fazla html sayfasını ilgilendiriyor ise bu durumda .css uzantılı bir dosya oluşturup bu dosya içerisine css kodlarımızı tanımlamamız gerekir. 
+              <p>**.css dosyası içindeki css kodlarını uygulamak istediğimiz her html sayfasına style.css dosyasını tanıtmamız gerekiyor.</p> 
+             </p>
+            </div>
+           </p> <br>
+          </div>
+        </div>
+        <div id="id-class">
+          <div class="content">
+            <h3 >ID VE CLASSES</h3>
+             Html etiketlerine css kodu yazabilmek için ilk önce ilgili etiketi seçmemiz gerekir. Css ile html etiketlerine 3 farklı yöntemle ulaşabiliriz. Bunlar;
+            <br>
+            <b>- Etiket ismi</b> <br>
+            <b>- Etiket Id</b> <br>
+            <b>- Class</b>
+            <div> 
+              <div>
+                <b>ETİKET İSMİ İLE ULAŞMAK</b> <br>
+                 Bir etikete ulaşmak için etiket ismini kullandığımızda sayfadaki aynı isimdeki tüm etiketlere ulaşmış oluruz. Örnek; <br>
+                <div class="code-back d-inline-block">
+                  p { <br>
+                 <span class="shadow-font"> /* Tüm &ltp&gt etiketleri için css kodları */</span> <br>
+                  } <br>
+             
+                  div  { <br>
+                 <span class="shadow-font"> /* Tüm &ltdiv&gt etiketleri */</span>  <br> }
+                </div>
+              </div> <br>
+              <div> 
+                <b>ID ATTRİBUTE İLE ULAŞMAK</b> <br>
+                 Eğer aynı etiket ismine sahip birden fazla etiket içinden sadece bir tanesine ulaşmak istediğimizde id attribute' unu kullanabiliriz. Örnek; <br>
+                <div class="code-back d-inline-block"> &lth1 id="header"&gt  <br>
+                 Komple Uygulamalı Web Geliştirme Eğitimi <br>
+                 &lt/h1&gt 
+                </div> <br><br>
+                <div class="code-back d-inline-block">  #header { <br>
+                  font-size: 32px; <br>
+                  font-weight:bold; <br>
+                  color:green; <br> }
+                </div>
+              </div> <br>
+              <div> 
+                <b>CLASS İLE ULAŞMAK</b> <br>
+                 Eğer belli css kodlarını birden fazla etikete vermek istediğimizde bu durumda css kodlarını bir sınıf içinde gruplarız ve bu sınıf ismini istediğimiz etikete verebiliriz dolayısıyla bu sınıfın içindeki css kodları bu sınıfa sahip olan tüm etiketlere uygulanmış olur.<br><br>
+                <p> Örneğin; sayfada 3 tane &ltli&gt etiketimiz var ve biz sadece ikisinin arka plan rengini yeşil yapmak istiyoruz. </p> 
+                <div class="code-back d-inline-block"> .active{ <br>
+                background-color : green; <br>}
+                </div> <br><br>
+                <p> active sınıfını hangi etikete verirsek verelim o etiket yeşil arka plana sahip olur. &ltli&gt , &ltp&gt ,&ltdiv&gt fark etmez.</p>
+                <div class="code-back d-inline-block">
+                  &ltul&gt <br>
+                  &ltli class="active"&gt  item 1 &lt/li&gt <br>
+                  &ltli&gt item 2 &lt/li&gt <br>
+                  &ltli class="active"&gt item 3 &lt/li&gt <br>
+                  &lt/ul&gt <br><br>
+                  &ltdiv class="active"&gt <br>
+                  arka plan yeşil olur. <br>
+                  &lt/div&gt
+                </div> <br><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+body {
+    font-family: "EB Garamond", serif;
+    background-color: rgb(236, 236, 236);
+    font-size: 17px;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .navbar {
+    padding: 18px 18px 18px 60px;
+    margin-bottom: 37px;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0 0 9px 6px black;
+    width: 100%;
+    z-index: 9999;
+  }
+  .row {
+    width: 100%;
+  }
+  .btn:hover {
+    background-color: #fff;
+    color: #212529;
+    border: 1px solid #212529;
+    transition-duration: 0.6s;
+  }
+  .card-tittle {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 5px 0px;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    background-color: #fff;
+  }
+  .card-div {
+    width: 25%;
+    position: fixed;
+    top: 118px;
+ }
+  .list-group-item a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+  }
+  .list-group-item a:hover {
+    color: #406694;
+  }
+  .content {
+    background-color: #fff;
+    padding: 40px 0px 0px 15px;
+  }
+
+  /* html içerik özel style */
+  #paragraph-label, #title-tags, #format-labels, #add-photos  {
+    padding-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  /* css içerik özel style */
+  .shadow-font {
+    color: #888888;
+  }
+  .code-back {
+    background-color: rgb(236, 236, 236);
+  }
+  
+  #css-syntax, #css-fonts, #id-class {
+    padding-top: 40px;
+    margin-bottom: 25px;
+  }
+
+  /* js içerik özel style */
+  #changes, #data-types {
+    padding-top: 40px;
+    margin-bottom: 25px;
+  }
